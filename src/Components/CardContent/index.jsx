@@ -1,4 +1,2 @@
-import Card from './ShowCard'
-export {
-    Card
-}
+import ShowCard from './ShowCard'
+export default ShowCard;
