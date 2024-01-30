@@ -1,0 +1,141 @@
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .card-above-div {
+      padding: 2rem;
+    }
+    
+    .price-div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .call-btn,
+    .chat-btn {
+      width: 100%;
+    }
+  }
+  
+  .call-btn,
+  .chat-btn {
+    width: 7rem;
+    height: 40px;
+    border: 2px solid #002F34;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .call-btn:hover{
+    border: 5px solid #002F34;
+}
+  
+  .chat-btn {
+    background-color: #002F34;
+    color: #FFFFFF;
+  }
+  
+  /* Additional styling */
+  .card-above-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .price-div {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .light{
+    font-size: 15px;
+    color: #5C7A7D;
+  }
+  .light:hover{
+    color: #002F34;
+    cursor: pointer;
+  }
+  .bg-ads{
+    background-color:#C8F8F6;
+    border-radius: 4px;
+    display: flex;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 24px;
+    padding-top: 5px;
+
+  }
+  .view{
+    font-size: 18px;
+    color: #002F34;
+    font-weight: 500;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .fa-bars{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8F8F6;
+    border-radius: 50%;
+
+  }
+  .fa-boxes-stacked{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+  }
+  .fa-boxes-stacked:hover{
+    background-color: rgb(70, 225, 225);
+    cursor: pointer;
+  
+  }
+  .fa-bars:hover{
+    background-color: rgb(70, 225, 225);
+    cursor: pointer;
+  }
+  .line{
+    border-right: 1px solid #686363 !important;
+    width: 25px;
+    height: 25px;
+  }
+   
+  /* other css code  */
+  .context{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+hr{
+  border: 1px solid #5C7A7D !important;
+}  
+.product-img{
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+}
+.col-lg-4{
+  overflow: hidden;
+}
+
+.product-img:hover{
+  transform: scale(1.02);
+  border-radius: 5px;
+  /* position: relative; */
+  /* transition: 'transform 0.5s ease' */
+
+}

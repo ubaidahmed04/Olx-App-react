@@ -1,0 +1,35 @@
+
+.main-Navbar{
+    padding-top: 110px;
+    background-color: brown;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-size: 18px;
+    gap: 25px;
+}
+@media only  screen and (max-width:768px){
+ .Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    font-size: 15px;
+    gap: 2opx;
+ }   
+}
+@media only  screen and (max-width:500px){
+    .Navbar{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 60px;
+       width: 100%;
+       font-size: 15px;
+       gap: 2opx;
+    }   
+   }
