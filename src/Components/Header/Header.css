@@ -39,7 +39,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 10px;
     gap: 20px;
     
@@ -234,7 +234,7 @@
 @media only screen and  (min-width:500px) and (max-width: 700px) {
     .searchInput{
         width: 200px;
-        min-width: 200px;
+        min-width: 200px; 
         height: 50px;
         border: 2px solid #002F34;
         border-radius:  8px  0  0 8px ;
@@ -267,10 +267,10 @@
 
    
 }
-@media only screen and   (max-width: 500px)  {
+@media only screen and   (min-width: 500px)  {
     .main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
    }
    .main img{
     width: 60px;
@@ -279,8 +279,13 @@
         width: 40px;
     }
     .searchInput{
-        width: 200px;
+        width: 100px;
     }
+    .location{
+        /* width: 80px; */
+        display: none;
+    }
+   
     .sell{
         font-weight: 400;
     }

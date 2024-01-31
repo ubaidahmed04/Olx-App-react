@@ -80,7 +80,7 @@ function ShowCard() {
 
                     </div>
                     <hr/>
-                          {/* <CardProduct/> */}
+                          <CardProduct/>
 
                 
                 </div>

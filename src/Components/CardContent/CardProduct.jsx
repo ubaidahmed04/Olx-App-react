@@ -1,12 +1,12 @@
-import { Spin } from 'antd';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap'
-import React, { useEffect, useState } from 'react';
+import { Spin,   } from 'antd';
 
 
 
 function CardProduct() {
-    
+
     const [productData, setProductData] = useState([]);
     const [limits, setLimits] = useState(15);
     const [loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ function CardProduct() {
                         <Card style={{ width: '100%' }}>
                             <div className="row">
                                 <div className="col-lg-4">
-                                    <Card.Img variant="top" src={product.thumbnail} alt={Product} className="product-img" />
+                                    <Card.Img variant="top" src={product.thumbnail} alt={"Product"} className="product-img" />
                                 </div>
                                 <div className="col-lg-8">
                                     <Card.Body>
@@ -86,7 +86,7 @@ function CardProduct() {
                             </div>
                         </Card>
                     </div>
-                </Link>
+                 </Link>
             ))}
              {loading && (
         <div className='text-center mt-3'>
