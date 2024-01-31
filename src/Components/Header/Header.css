@@ -230,27 +230,29 @@
 }
 
 }
+/* 
+@media (max-width: 550px) {
+    .location {
+        display: none;
+    }
+} */
 
-@media only screen and  (min-width:500px) and (max-width: 700px) {
+@media only screen and  (min-width:400px) and (max-width: 600px) {
     .searchInput{
         width: 200px;
         min-width: 200px;
         height: 50px;
         border: 2px solid #002F34;
         border-radius:  8px  0  0 8px ;
-
-    
     }
     .searchBar{
         display: flex;
-        flex-grow: 1  ;
     }
     .main img{
         width: 70px;
     }
     .location{
-        width: 150px;
-        display: flex;
+        display: none;
     }
     #dropdown-basic{
         width: 100px;
@@ -339,7 +341,7 @@
         font-size: 10px;
     }
     .main-Navtab{
-        width: 100wh;
+        width: 100vw;
     }
     .Navtab{
         display: flex;

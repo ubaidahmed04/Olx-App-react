@@ -5,10 +5,10 @@ import './Card.css'
 import CardProduct from './CardProduct'
 function ShowCard() {
   return (
-    <>
-        
-        <div className='d-flex'>
-                <div className=' home' width={"28%"}>
+    <>        
+    {/* here is a class with the name of "flex-wrap" if you remove it your responsivness will be removed.. */}
+        <div className='d-flex flex-wrap'>
+                <div className='home' width={"28%"}>
                     <p className='light'>Home</p>
                     <h4 className='bold fw-700 h3'>
                         App In Pakistan
@@ -60,10 +60,10 @@ function ShowCard() {
                         <div className='bg-ads'>
                             <span className=''>1,302 ads</span>
                         </div>
-                        <div className='view '>
+                        <div className='view'>
                             <span>VIEW</span>
-                            <span><i class="fa-solid fa-bars fa-lg"></i></span>
-                            <span><i class="fa-solid fa-boxes-stacked fa-xl"></i></span>
+                            <span><i className="fa-solid fa-bars fa-lg"></i></span>
+                            <span><i className="fa-solid fa-boxes-stacked fa-xl"></i></span>
                             <span className='line'></span>
                             <Dropdown as={ButtonGroup}>
                                 <Button variant="light">SORT BY:</Button>
@@ -80,8 +80,7 @@ function ShowCard() {
 
                     </div>
                     <hr/>
-                          {/* <CardProduct/> */}
-
+                          <CardProduct/> 
                 
                 </div>
             </div>

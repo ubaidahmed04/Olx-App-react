@@ -4,7 +4,9 @@
     background-color: brown;
 }
 .Navbar{
+    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 60px;
     width: 100%;
@@ -13,13 +15,13 @@
 }
 @media only  screen and (max-width:768px){
  .Navbar{
-    display: flex;
+    display: flex;flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 60px;
     width: 100%;
     font-size: 15px;
-    gap: 2opx;
+    gap: 20px;
  }   
 }
 @media only  screen and (max-width:500px){

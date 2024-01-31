@@ -25,7 +25,7 @@ function Header() {
                     <div>
                         <img src={BlackLogo}  width={'150px'}  className='black-logo' />
                     </div>
-                    <div className='location '>
+                    <div className='location'>
                         <Select
                             defaultValue="lucy"
                             value="Pakistan"

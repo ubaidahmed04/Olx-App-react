@@ -1,5 +1,5 @@
 import { Spin } from 'antd';
-import { useNavigate, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap'
 import React, { useEffect, useState } from 'react';
 
@@ -8,14 +8,14 @@ import React, { useEffect, useState } from 'react';
 function CardProduct() {
     
     const [productData, setProductData] = useState([]);
-    const [limits, setLimits] = useState(15);
+    // const [limits, setLimits] = useState(15);
     const [loading, setLoading] = useState(false);
-    // const limit = 12
+    const limit = 12
     useEffect(() => {
         const fetchDataAsync = async () => {
             setLoading(true);
           try {
-            const response = await fetch(`https://dummyjson.com/products?limit=${limits}`);
+            const response = await fetch(`https://dummyjson.com/products?limit=${limit}`);
             const data = await response.json();
             setProductData([...data.products]);
             console.log(data);
@@ -47,7 +47,7 @@ function CardProduct() {
                         <Card style={{ width: '100%' }}>
                             <div className="row">
                                 <div className="col-lg-4">
-                                    <Card.Img variant="top" src={product.thumbnail} alt={Product} className="product-img" />
+                                    <Card.Img variant="top" src={product.thumbnail} alt={product.title} className="product-img" />
                                 </div>
                                 <div className="col-lg-8">
                                     <Card.Body>
@@ -90,7 +90,7 @@ function CardProduct() {
             ))}
              {loading && (
         <div className='text-center mt-3'>
-          <Spin tip='Loading' size='large' />
+          {/* <Spin tip='Loading' size='large' /> */}
         </div>
       )}
       {productData.length > 0 && !loading && (
